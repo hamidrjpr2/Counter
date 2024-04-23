@@ -1,6 +1,6 @@
-![GitHub Repo stars](https://img.shields.io/github/stars/Counter/Portfolio?style=flat&logo=star) ![GitHub language count](https://img.shields.io/github/languages/count/hamidrjpr2/Counter?color=%23c1121f) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/hamidrjpr2/Counter)
+![GitHub Repo stars](https://img.shields.io/github/stars/hamidrjpr2/Counter?style=flat&logo=star) ![GitHub language count](https://img.shields.io/github/languages/count/hamidrjpr2/Counter?color=%23c1121f) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/hamidrjpr2/Counter)
 
-# My Portfolio `Responsive`
+# MSimple Counter  `Javascript`
 
 <h4 align="center">
   <span>Project Live Demo -> </span>
