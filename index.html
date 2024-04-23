@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 500px;
+            margin: 200px auto;
+
+            >div {
+                &:nth-of-type(1) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+                    >h2 {
+                        font-size: 80px;
+                    }
+
+                    >span {
+                        font-size: 110px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    margin-top: 20px;
+
+                    >button {
+                        width: 230px;
+                        height: 35px;
+                        margin-inline: 10px;
+                        background: transparent;
+                        border-radius: 10px;
+                        font-size: 20px;
+                        font-weight: 100;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div>
+            <h2>Counter</h2>
+            <span id="count">0</span>
+        </div>
+        <div>
+            <button onclick="plusMinus('plus')">Plus +</button>
+            <button onclick="plusMinus('reset')">Reset</button>
+            <button onclick="plusMinus('minus')">Minus -</button>
+        </div>
+    </main>
+
+    <script>
+        const myCount = document.getElementById('count')
+
+        function plusMinus(entry) {
+            num = Number(myCount.innerText)
+
+            switch (entry) {
+                case "plus":
+                    num += 1
+                    myCount.innerText = num;
+                    break;
+                case "minus":
+                    num -= 1
+                    myCount.innerText = num;
+                    break;
+                case "reset":
+                    myCount.innerText = 0;
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
